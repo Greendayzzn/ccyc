@@ -50,6 +50,17 @@
         <van-button size="small" type="primary">发送验证码</van-button>
       </template>
     </van-field>
+    <van-field
+        name="policy"
+        class="enter-y items-center px-1 !rounded-md"
+        :rules="getFormRules.policy"
+      >
+        <template #input>
+          <van-checkbox v-model="formData.policy" icon-size="14px" shape="square">
+            我同意 xxx 隐私政策
+          </van-checkbox>
+        </template>
+      </van-field>
 
     <van-button
       class="enter-y !rounded-md !mb-25px"
@@ -100,6 +111,7 @@ const formData = reactive({
   username: "admin",
   phoneNum: "123456",
   sms: "",
+  policy:''
 });
 
 const getShow = computed(() => unref(getLoginState) === LoginStateEnum.LOGIN);
