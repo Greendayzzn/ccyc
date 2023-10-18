@@ -1,7 +1,7 @@
 <!--
  * @Author: 张卓南
  * @Date: 2023-10-18 20:23:54
- * @LastEditTime: 2023-10-18 21:38:10
+ * @LastEditTime: 2023-10-18 21:40:26
  * @Description: 
 -->
 <template>
@@ -147,7 +147,7 @@
             native-type="submit"
             :loading="loading"
           >
-            编辑
+            发布
           </van-button>
         </van-form>
       </div>
