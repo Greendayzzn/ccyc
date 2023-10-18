@@ -34,7 +34,7 @@
     </van-field>
 
     <van-field
-      class="enter-y items-center mb-70px !rounded-md"
+      class="enter-y items-center mb-20px !rounded-md"
       v-model="formData.sms"
       center
       clearable
@@ -52,12 +52,12 @@
     </van-field>
     <van-field
         name="policy"
-        class="enter-y items-center px-1 !rounded-md"
+        class="enter-y items-center px-1 !rounded-md mb-20px "
         :rules="getFormRules.policy"
       >
         <template #input>
           <van-checkbox v-model="formData.policy" icon-size="14px" shape="square">
-            我同意 xxx 隐私政策
+            同意《创创约车注册服务协议》
           </van-checkbox>
         </template>
       </van-field>
