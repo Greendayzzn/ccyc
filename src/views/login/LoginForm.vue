@@ -9,7 +9,7 @@
       class="enter-y items-center mb-25px !rounded-md"
       v-model="formData.username"
       name="username"
-      placeholder="用户名"
+      placeholder="姓名"
       :rules="getFormRules.username"
     >
       <template #left-icon>
@@ -71,15 +71,7 @@
     >
       登 录
     </van-button>
-    <!-- <van-button
-      class="enter-y !mb-25 !rounded-md"
-      plain
-      type="primary"
-      block
-      @click="setLoginState(LoginStateEnum.REGISTER)"
-    >
-      注 册
-    </van-button> -->
+
   </van-form>
 </template>
 
